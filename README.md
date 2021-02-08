@@ -34,12 +34,12 @@ https://docs.google.com/document/d/1YLXA-zjy0KFBMMgFSZN1QUKv3Rie46kFgE4ulY4VDks/
 Linterna is a lamp appreciation web app that allows users to view high-end lamps all in one application. Users can view lamp details such as name, price, and description without an account. Upon sign up/sign in, users will be able to add, edit, and delete lamps from the collection.
 
 ## MVP
--Homepage, Product List page, Product Detail Page, Add Product page, Edit Product page
--Authentication - Sign Up, Sign In, Sign On
--Image Carousel on the homepage
+- Homepage, Product List page, Product Detail Page, Add Product page, Edit Product page
+- Authentication - Sign Up, Sign In, Sign On
+- Image Carousel on the homepage
 
 ## Post MVP
--Search feature
--Contact Us form
--Sort products
--Image carousel on product details page
+- Search feature
+- Contact Us form
+- Sort products
+- Image carousel on product details page
