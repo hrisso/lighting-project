@@ -1,12 +1,13 @@
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const User = require('../models/user')
-const db = require('../db/connection')
+const db = require('../db/connection') 
+require("dotenv").config()
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-const SALT_ROUNDS = 11
-const TOKEN_KEY = 'areallylonggoodkey' 
+const SALT_ROUNDS = process.env.SALT_ROUNDS
+const TOKEN_KEY = process.env.TOKEN_KEY
 //token key ask?
 
 const signUp = async (req, res) => {
