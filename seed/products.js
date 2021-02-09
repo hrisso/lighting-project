@@ -12,66 +12,7 @@ const main = async () => {
           "imgURL": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixid=MXwxMjA3fDB8MHxwaG90[…]VufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
           "description": "Beautiful arrangment of five gold drop lights sourced from Italy."
         }, 
-        {
-          "name": "",
-          "price": "",
-          "imgURL": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "price": "",
-          "imgURL": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "price": "",
-          "imgURL": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "price": "",
-          "imgURL": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "price": "",
-          "imgURL": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "price": "",
-          "imgURL": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "price": "",
-          "imgURL": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "price": "",
-          "imgURL": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "price": "",
-          "imgURL": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "price": "",
-          "imgURL": "",
-          "description": ""
-        },
+        
         
       ]
 
