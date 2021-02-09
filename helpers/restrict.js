@@ -1,7 +1,6 @@
 const jwt = require('jsonwebtoken')
-const TOKEN_KEY = 'areallylonggoodkey'
+const TOKEN_KEY = process.env.TOKEN_KEY
 
-/// ask about token key // enviroment variable
  const restrict = (req, res, next) => {
 
         
