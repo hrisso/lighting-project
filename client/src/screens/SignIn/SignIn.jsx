@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './SignIn.css'
 import { signIn } from '../../services/users'
-import { useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom";
+import Layout from '../../components/shared/Layout/Layout'
 
 const SignIn = (props) => {
 
@@ -57,7 +58,8 @@ const SignIn = (props) => {
 
     const { username, password } = form
 
-    return (
+  return (
+      <Layout>
         <div className="form-container">
             <h3>Sign In</h3>
             <form onSubmit={onSignIn}>
@@ -81,7 +83,8 @@ const SignIn = (props) => {
                 />
                 {renderError()}
             </form>
-        </div>
+      </div>
+    </Layout>
     )
 }
 
