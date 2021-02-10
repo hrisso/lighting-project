@@ -8,9 +8,9 @@ const getToken = () => {
 }
 
 const api = axios.create({
-  baseUrl: process.env.NODE_ENV === 'production'
-    ? 'https://sei-products-api.herokuapp.com/api'
-    : 'https://localhost:3000/api'
+  baseURL: process.env.NODE_ENV === 'production'
+    ? 'https://linterna-project.herokuapp.com/api'
+    : 'http://localhost:3006/api'
 })
 
 api.interceptors.request.use(async function(options) {
