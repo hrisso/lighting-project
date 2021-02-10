@@ -8,8 +8,8 @@ const EditProduct = (props) => {
 
     const [product, setProduct] = useState({
             name: '',
-            description: '',
             imgURL: '',
+            description: '',
             price: ''
     })
   
@@ -34,13 +34,13 @@ const EditProduct = (props) => {
 
   const handleSubmit = async (event) => {
       event.preventDefault()
-      let { id } = props.match.params
       const updated = await updateProduct(id, product)
       setUpdated(updated)
   }
+ 
 
   if (isUpdated) {
-    return <Redirect to={`/products/${props.match.params.id}`}/>
+    return <Redirect to={`/products/${id}`}/>
   }
   
     return (
