@@ -16,7 +16,7 @@ const main = async () => {
     {
       name: "Bright Backyard",
       price: "$250",
-      imgURL: "https://unsplash.com/photos/BCNO7JuNi1w",
+      imgURL: "https://images.unsplash.com/photo-1552529232-9e6cb081de19?ixid=MXwxMjA3fDB8MHxzZWFyY2h[…]fHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       description:
         "Brighten you backyard with a collection of these stark outdoor lights",
     },

@@ -14,7 +14,6 @@ const Products = (props) => {
       setAllProducts(products)
     }
     fetchProducts()
-    console.log(allProducts)
   }, [])
 
   const productsJSX = allProducts.map((product, index) =>
