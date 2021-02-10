@@ -5,7 +5,7 @@ const Nav = ({ user }) => {
   const signedInOptions = (
     <>
       <NavLink to="/add">Add</NavLink>
-      <NavLink to="/sign-out">Sign out</NavLink>
+      <NavLink to="/sign-out">Sign out</NavLink> 
     </>
   )
   const signedOutOptions = (
@@ -21,7 +21,7 @@ const Nav = ({ user }) => {
         <div className="links">
           <NavLink to="/products">Products</NavLink>
           {user ? signedInOptions : signedOutOptions}
-          {user && <div>{user.username}</div>}
+          {user && <div className="links">{user.username}</div>}
         </div>
       </div>
     </nav>
