@@ -42,16 +42,16 @@ const Home = ({slides}) => {
       <h1 className="heading-1">Ways to Feature Lighting Solutions</h1>
       <div className="solutions-block"> 
           
-        <div className="column-1">
+        <div className="column">
           <h2>Clear an area around your light</h2>  
           <p>Having a clean space will help the features of the light pop in your decorating scheme. Keeping the area clear is also safer! Wires can get messy and be dangerous even if they are connected correctly. Have space around your light. 
           </p>
         </div> 
-        <div className="column-2">
+        <div className="column">
           <h2>Coordinate colors</h2>  
           <p>Coordinate the colors of your light to complement the surrounding area or vice versa. You can either choose the light to match the decor or choose the lighting solutions first and fill in with furniture. Coordinating the color scheme will help your light ‘pop’. </p>
         </div>
-        <div className="column-3">
+        <div className="column">
           <h2>Choose the right size</h2>  
           <p>Sizing your light is important. Too large or too small and the light looks ridiculous. Remember the rule of threes or use the golden ratio to measure and buy a correctly sized light.</p>
         </div>  
