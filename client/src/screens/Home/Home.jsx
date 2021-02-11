@@ -1,31 +1,49 @@
 import "./Home.css"; 
 import Layout from "../../components/shared/Layout/Layout"; 
-import Carousel from 'react-bootstrap/Carousel';
+import { SliderData } from "./SliderData";
+import { useState } from "react"; 
+import { FaArrowAltCircleRight,FaArrowAltCircleLeft } from "react-icons/fa" 
 
-const Home = ( ) => {
+const Home = ({slides}) => { 
+  const [current, setCurrent] = useState(0); 
+  const length = slides.length  
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  }; 
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  };
+  
+  
   return (
     <div>
-      <Layout />
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://images.unsplash.com/photo-1582492065409-9315e8075a2c?ixid=MXwxMjA3fDB8MHxzZWFy[…]58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://images.unsplash.com/photo-1604610728890-6f4b631ed081?ixid=MXwxMjA3fDB8MHxzZWFy[…]58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://images.unsplash.com/photo-1574286963546-2afa6f51a6cf?ixid=MXwxMjA3fDB8MHxzZWFy[…]fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
-        </Carousel.Item>
-      </Carousel>
+      <Layout />  
+      <div className="slider"> 
+        <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide}/> 
+        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide}/>
+        {SliderData.map((slide, index) => { 
+          return (
+            <div className={index === current ? 'slide active' : 'slide'}
+            key={index}
+            >
+            {index === current && (
+              <img src={slide.image} alt='travel image' className='image' />
+            )}
+            </div>
+          
+          );
+      })} 
+            </div> 
     </div>
-  )
-}
+  );
+};
 export default Home;
+
+     
+      
+    
