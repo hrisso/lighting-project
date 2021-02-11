@@ -1,13 +1,13 @@
 .slider{ 
   position:relative; 
-  height: 50vh; 
+  height: 80vh; 
   display: flex; 
   justify-content: center;
   align-items: center;
 } 
 .image{
-  width:630px; 
-  height:350px; 
+  width:70vw; 
+  height:40vh; 
   border-radius:10px; 
   object-fit: cover;
 } 
@@ -17,7 +17,7 @@
   top:50%; 
   right: 32px; 
   font-size:3rem; 
-  color:#7fc8f8; 
+  color:black; 
   z-index:10; 
   cursor:pointer; 
   user-select:none;
@@ -28,7 +28,7 @@
   top:50%; 
   left: 32px; 
   font-size:3rem; 
-  color:#7fc8f8; 
+  color:black; 
   z-index:10; 
   cursor:pointer; 
   user-select:none;
