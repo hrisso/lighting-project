@@ -52,7 +52,7 @@ const SignIn = (props) => {
                 </button>
             )
         } else {
-            return <button type="submit">Sign In</button>
+            return <button type="submit">Submit</button>
         }
     }
 
@@ -62,17 +62,15 @@ const SignIn = (props) => {
       <Layout>
         <div className="form-container">
             <h3>Sign In</h3>
-            <form onSubmit={onSignIn}>
-                <label>Username</label>
+            <form className="sign-in-form" onSubmit={onSignIn}>
                 <input
                     required
                     type="text"
                     name="username"
                     value={username}
-                    placeholder="Enter Username"
+                    placeholder="Username"
                     onChange={handleChange}
                 />
-                <label>Password</label>
                 <input
                     required
                     name="password"

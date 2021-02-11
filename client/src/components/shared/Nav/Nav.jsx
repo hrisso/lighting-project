@@ -20,7 +20,7 @@ const Nav = ({ user }) => {
   return (
     <nav>
       <div className="nav">
-        <NavLink className="nav-home" to="/">Linterna</NavLink>
+        <NavLink className="nav-home" to="/">LINTERNA</NavLink>
         <div className="links">
           <NavLink to="/products">Products</NavLink>
           {user ? signedInOptions : signedOutOptions}

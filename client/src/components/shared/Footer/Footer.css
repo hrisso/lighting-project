@@ -1,8 +1,7 @@
-img { 
-  padding-top:20px;
+footer img { 
   height: 50px;
-  align-self: center;
 } 
+
 footer {
   display: flex;
   position: fixed;
@@ -11,7 +10,8 @@ footer {
   right: 0;
   width: 100vw;
   height: 100px;
-  background-color:#ffe45e;
-  justify-content:center;
+  background-color: #ffe45e;
+  justify-content: center;
+  align-items: center;
   border-top: 2px solid black;
 }
