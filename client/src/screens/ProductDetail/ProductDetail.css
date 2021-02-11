@@ -46,3 +46,24 @@
   text-decoration: none;
   color: #F9F9F9;
 }
+
+@media screen and (max-width:500px) {
+  
+  .product-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .product-detail-image {
+    align-self: center;
+    margin: 20px;
+    width: 50%;
+  }
+
+  .detail {
+    text-align: center;
+  }
+
+}
