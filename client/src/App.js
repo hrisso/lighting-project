@@ -9,7 +9,9 @@ import { Route, Switch, Redirect } from 'react-router-dom'
 import { verifyUser } from './services/users'
 import SignUp from './screens/SignUp/SignUp'
 import SignIn from './screens/SignIn/SignIn'
-import SignOut from './screens/SignOut/SignOut.jsx'
+import SignOut from './screens/SignOut/SignOut.jsx' 
+// image data
+import { SliderData } from "./screens/Home/SliderData";
 
 const App = () => {
   const [user, setUser] = useState(null)
@@ -28,7 +30,7 @@ const App = () => {
     <div className="app">
       <Switch>
         <Route exact path="/">
-          <Home user={user} />
+          <Home user={user} slides={SliderData} />
         </Route>
         <Route path="/sign-up">
           <SignUp setUser={setUser} />
