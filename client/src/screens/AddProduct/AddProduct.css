@@ -3,7 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px 30px;
+  margin: 100px 25%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.create-form {
+  font-family: 'Sora', sans-serif;
 }
 
 .create-form input,
@@ -20,6 +26,7 @@
   background-color:#FF6392;
   border-radius: 5px;
   border: none;
+  font-family: 'Sora', sans-serif;
   font-size: 20px;
   color: #F9F9F9;
   padding: 10px 20px;
