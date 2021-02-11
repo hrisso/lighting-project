@@ -7,8 +7,8 @@ const Layout = (props) => (
     <Nav user={props.user} />
     <div>
       {props.children}
-    </div>
-    <Footer />
+    </div> 
+      <Footer />
   </div>
 )
-export default Layout; 
+export default Layout;
