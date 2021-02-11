@@ -7,8 +7,11 @@ const Layout = (props) => (
     <Nav user={props.user} />
     <div>
       {props.children}
+    </div> 
+    <div className="footer">
+      <Footer />
     </div>
-    <Footer />
   </div>
 )
 export default Layout; 
+

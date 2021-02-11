@@ -44,4 +44,11 @@
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
+} 
+
+.solutions-block{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items:flex-start;
 }
