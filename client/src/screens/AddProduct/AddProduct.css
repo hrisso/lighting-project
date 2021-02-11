@@ -3,13 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Sora', sans-serif;
   margin: 100px 25%;
   border: 2px solid black;
   border-radius: 5px;
-}
-
-.create-form {
-  font-family: 'Sora', sans-serif;
 }
 
 .create-form input,
@@ -19,7 +16,7 @@
   border: 2px solid gray;
   border-radius: 2px;
   font-family: 'Sora', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .submit-button {
@@ -30,6 +27,12 @@
   font-size: 20px;
   color: #F9F9F9;
   padding: 10px 20px;
-  margin: 10px 5px 10px 20px;
+  margin: 10px 5px 20px 20px;
   width: 100px;
+}
+
+@media screen and (max-width:500px) {
+  .create-form {
+    margin: 75px 10%;
+  }
 }
