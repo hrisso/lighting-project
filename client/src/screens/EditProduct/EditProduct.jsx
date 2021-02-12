@@ -47,19 +47,17 @@ const EditProduct = (props) => {
       <Layout user={props.user}>
           <div className="product-edit">
               <div className="image-container">
-                  <img className="edit-product-image" src={product.imgURL} alt={product.name} />
-                  <form onSubmit={handleSubmit}>
-                      <input
-                          className="edit-input-image-link"
-                          placeholder='Image Link'
-                          value={product.imgURL}
-                          name='imgURL'
-                          required
-                          onChange={handleChange}
-                      />
-                  </form>
+                <img className="edit-product-image" src={product.imgURL} alt={product.name} />
               </div>
               <form className="edit-form" onSubmit={handleSubmit}>
+                  <input
+                      className="edit-input-image-link"
+                      placeholder='Image Link'
+                      value={product.imgURL}
+                      name='imgURL'
+                      required
+                      onChange={handleChange}
+                  />
                   <input
                       className="input-name"
                       placeholder='Name'
