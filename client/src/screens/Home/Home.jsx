@@ -4,7 +4,7 @@ import { SliderData } from "./SliderData";
 import { useState } from "react"; 
 import { FaArrowAltCircleRight,FaArrowAltCircleLeft } from "react-icons/fa" 
 
-const Home = ({slides}) => { 
+const Home = ({slides, user}) => { 
   const [current, setCurrent] = useState(0); 
   const length = slides.length  
 
@@ -22,7 +22,7 @@ const Home = ({slides}) => {
   
   return (
     <div>
-      <Layout>
+      <Layout user={user}>
         <div className="slider">
           <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
           <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />

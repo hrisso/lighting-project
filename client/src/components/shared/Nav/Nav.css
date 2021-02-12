@@ -28,7 +28,7 @@ nav a:hover{
   border-bottom: 1px solid #0b132bff;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:579px) {
   .nav {
     display: flex;
     flex-direction: column;
