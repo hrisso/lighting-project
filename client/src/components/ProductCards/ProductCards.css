@@ -1,19 +1,11 @@
-productCards {
-  display: flex;
-}
-
 .product-cards {
 text-decoration: none;
 text-align: center;
-/* border: 1px solid grey; */
-padding: 10px;
-align-items: center;
+align-self: flex-start;
 height: 20%;
 width: 20%;
 margin: 15px;
 padding: 10px 10px 10px 10px;
-position: relative;
-border-radius: 5px;
 }
 
 .product-cards img {
@@ -22,8 +14,6 @@ border-radius: 5px;
 }
 
 .product-image {
-  width: 100%;
-  height: 100%; 
   align-self: center;
   border: 1px solid grey;
   position: relative;
@@ -35,11 +25,20 @@ border-radius: 5px;
   color: black;
   font-family: 'Sora', sans-serif;
   font-weight: bold;
+  padding: 10px;
 }
-.price {
+.product-price {
   font-size: 13px;
   text-decoration: none;
   align-content: center;
   color: black;
   font-family: 'Sora', sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  
+  .product-cards {
+    width: 80%;
+    height: 50%;
+}
 }
