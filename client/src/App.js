@@ -10,7 +10,6 @@ import { verifyUser } from './services/users'
 import SignUp from './screens/SignUp/SignUp'
 import SignIn from './screens/SignIn/SignIn'
 import SignOut from './screens/SignOut/SignOut.jsx' 
-// image data
 import { SliderData } from "./screens/Home/SliderData";
 
 const App = () => {
