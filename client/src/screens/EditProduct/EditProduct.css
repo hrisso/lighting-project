@@ -1,0 +1,58 @@
+.product-edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container,
+.edit-image-field,
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.edit-product-image {
+  margin: 20px;
+  width: 70%;
+  height: auto;
+}
+
+.edit-form input, 
+.edit-form textarea,
+.edit-image-field input {
+  width: 70%;
+  margin: 10px;
+  border: 2px solid gray;
+  border-radius: 2px;
+  font-family: 'Sora', sans-serif;
+  font-size: 15px;
+}
+
+.save-button {
+  background-color:#FF6392;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Sora', sans-serif;
+  font-size: 20px;
+  color: #F9F9F9;
+  padding: 10px 20px;
+  margin: 20px 20px 40px 20px;
+  width: 150px;
+}
+
+@media screen and (max-width:500px) {
+  
+  .product-edit {
+    flex-direction: column;
+  }
+
+  .edit-product-image {
+    align-self: center;
+    margin: 20px;
+    width: 50%;
+  }
+}

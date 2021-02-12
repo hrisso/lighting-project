@@ -1,0 +1,50 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 25%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.form-container h3 {
+  font-family: 'Sora', sans-serif;
+  font-size: larger;
+  margin: 40px 10px 20px 10px;
+}
+
+.sign-in-form input{
+width: 60%;
+margin: 10px;
+border: 2px solid gray;
+border-radius: 2px;
+font-family: 'Sora', sans-serif;
+font-size: 15px;
+}
+
+.sign-in-form button {
+  background-color:#FF6392;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Sora', sans-serif;
+  font-size: 20px;
+  color: #F9F9F9;
+  padding: 10px 20px;
+  margin: 20px 20px 40px 20px;
+  width: 150px;
+}
+
+@media screen and (max-width:500px) {
+  .form-container {
+    margin: 75px 10%;
+  }
+}

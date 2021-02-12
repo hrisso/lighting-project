@@ -8,7 +8,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const SALT_ROUNDS = process.env.SALT_ROUNDS
 const TOKEN_KEY = process.env.TOKEN_KEY
-//token key ask?
+
 
 const signUp = async (req, res) => {
 
@@ -16,7 +16,7 @@ const signUp = async (req, res) => {
 
     try {
         const { username, email, password } = req.body
-        const password_digest = await bcrypt.hash(password, SALT_ROUNDS)
+        const password_digest = await bcrypt.hash(password,Number(SALT_ROUNDS) )
         const user = new User({
             username,
             email,
