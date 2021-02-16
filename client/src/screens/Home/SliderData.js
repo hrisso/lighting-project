@@ -1,5 +1,8 @@
 export const SliderData = [
   {
+    image: "https://res.cloudinary.com/doas1ztbf/image/upload/v1613488021/image_dwqmcj.png"
+  },
+  {
     image: "https://images.unsplash.com/photo-1582492065409-9315e8075a2c?ixid=MXwxMjA3fDB8MHxzZWFy[…]58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
   },
   {

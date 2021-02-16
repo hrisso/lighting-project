@@ -3,6 +3,7 @@ import Layout from "../../components/shared/Layout/Layout";
 import { SliderData } from "./SliderData";
 import { useState } from "react"; 
 import { FaArrowAltCircleRight,FaArrowAltCircleLeft } from "react-icons/fa" 
+import BestSellers from "../../components/BestSellers/BestSellers";
 
 const Home = ({slides, user}) => { 
   const [current, setCurrent] = useState(0); 
@@ -90,6 +91,7 @@ const Home = ({slides, user}) => {
             </p>
           </div>
         </div>
+        <BestSellers />
       </Layout>
     </div>
   );
