@@ -1,0 +1,17 @@
+.best-images {
+  display: flex; 
+  justify-content: center;
+}
+
+.best-sellers {
+padding: 20px;
+text-align: center;
+font-family: 'Sora', sans-serif;
+border-top: 1px solid black;
+}
+
+@media screen and (max-width: 1184px){
+  .best-images {
+    flex-flow: row wrap; 
+  }
+}
