@@ -4,7 +4,8 @@ import Home from './screens/Home/Home'
 import Products from './screens/Products/Products'
 import AddProduct from './screens/AddProduct/AddProduct'
 import EditProduct from './screens/EditProduct/EditProduct'
-import ProductDetail from './screens/ProductDetail/ProductDetail'
+import ProductDetail from './screens/ProductDetail/ProductDetail' 
+import Contact from "./screens/Contact/Contact"
 import { Route, Switch, Redirect } from 'react-router-dom'
 import { verifyUser } from './services/users'
 import SignUp from './screens/SignUp/SignUp'
@@ -51,6 +52,9 @@ const App = () => {
         </Route>
         <Route exact path="/products/:id">
           <ProductDetail user={user} />
+        </Route> 
+        <Route exact path="/contact">
+          <Contact user={user}/>
         </Route>
       </Switch>
     </div>
