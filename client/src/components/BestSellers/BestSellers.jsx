@@ -16,7 +16,7 @@ const BestSellers = (props) => {
   const [allProducts, setAllProducts] = useState([])
   
   const topFour = allProducts.slice(0, 4)
-  console.log(topFour)
+  
   const bestSellersJSX = topFour.map((product, index) => {
     return (
     <Link className="product-cards" to={`/products/${product._id}`} key={index}>
