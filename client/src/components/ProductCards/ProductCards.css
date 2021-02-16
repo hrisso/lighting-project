@@ -8,6 +8,11 @@ margin: 15px;
 padding: 10px 10px 10px 10px;
 }
 
+.product-cards:hover {
+  box-shadow: 5px 5px 8px #1c2541ff;
+  transition: all 0.2s;
+}
+
 .product-cards img {
   width: 180px;
   height: 180px;
