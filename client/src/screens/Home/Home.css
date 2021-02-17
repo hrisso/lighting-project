@@ -95,4 +95,24 @@
     position:relative; 
     height: 50vh; 
   }
+} 
+
+.rissos-button{
+  background-color:#FF6392;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Sora', sans-serif;
+  font-size: 15px;
+  color: #F9F9F9;
+  padding: 10px 20px;
+  margin: 0px 20px 40px 20px;
+  width: 150px;
+} 
+
+.heathers-button{
+  display:flex;  
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  font-family: 'Sora', sans-serif;
 }

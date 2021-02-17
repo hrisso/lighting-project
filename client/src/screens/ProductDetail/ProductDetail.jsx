@@ -3,6 +3,12 @@ import React, { useState, useEffect } from 'react';
 import Layout from '../../components/shared/Layout/Layout';
 import { getProduct, deleteProduct } from '../../services/products';
 import { useParams, Link } from 'react-router-dom';
+import BestSellers from "../../components/BestSellers/BestSellers"; 
+
+
+
+
+
 
 const ProductDetail = (props) => {
 
@@ -35,7 +41,8 @@ const ProductDetail = (props) => {
             <button className="delete-button" onClick={() => deleteProduct(product._id)}> <Link to="/products">Delete</Link></button>
           </div>}
         </div>
-      </div>
+      </div> 
+      <BestSellers/>
     </Layout>
   )
 }
