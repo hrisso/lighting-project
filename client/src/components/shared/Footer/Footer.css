@@ -1,6 +1,6 @@
 footer img { 
   height: 50px;
-} 
+}
 
 footer {
   display: flex;
@@ -13,16 +13,18 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   border-top: 2px solid black; 
-} 
+}
 
-.contact-link{
- text-decoration: none; 
- color:black; 
- font-family: 'Sora', sans-serif; 
-} 
+.contact-link {
+  text-decoration: none; 
+  color:black; 
+  font-family: 'Sora', sans-serif; 
+}
+
 footer p {
   font-family: 'Sora', sans-serif; 
-} 
-footer a:hover{
+}
+
+footer a:hover {
   border-bottom: 1px solid #0b132bff;
 }

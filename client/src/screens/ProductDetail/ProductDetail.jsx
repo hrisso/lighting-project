@@ -6,10 +6,6 @@ import { useParams, Link } from 'react-router-dom';
 import BestSellers from "../../components/BestSellers/BestSellers"; 
 
 
-
-
-
-
 const ProductDetail = (props) => {
 
   const [product, setProduct] = useState(null)
@@ -28,6 +24,7 @@ const ProductDetail = (props) => {
   if (!isLoaded) {
     return <h1>Loading...</h1>
   }
+
   return (
     <Layout user={props.user}>
       <div className="product-detail">
@@ -46,4 +43,5 @@ const ProductDetail = (props) => {
     </Layout>
   )
 }
+
 export default ProductDetail;

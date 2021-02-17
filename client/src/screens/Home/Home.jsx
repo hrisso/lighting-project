@@ -42,10 +42,10 @@ const Home = ({slides, user}) => {
             );
           })} 
         </div>  
-        <div className="heathers-button">
-          <h3>Exquisite lamps for everyday</h3>
+        <div className="home-button-section">
+          <h3>Exquisite Lamps for Everyday</h3>
         <Link to="/products">
-          <button className="rissos-button">View Products</button> 
+          <button className="home-button">View Products</button> 
         </Link>
         </div>
         <h1 className="heading-1">Ways to Feature Lighting Solutions</h1>

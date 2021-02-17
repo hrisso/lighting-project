@@ -75,4 +75,5 @@ const AddProduct = (props) => {
     </Layout>
   )
 }
+
 export default AddProduct;

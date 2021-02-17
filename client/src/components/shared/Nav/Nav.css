@@ -1,4 +1,4 @@
-.nav{
+.nav {
   font-family: 'Sora', sans-serif;
   display: inline-flex;  
   justify-content: space-between;  
@@ -10,7 +10,8 @@
   color: black;
 } 
 
-.nav a, .links {
+.nav a, 
+.links {
   padding: 2px 15px;  
   align-self: center;
   text-decoration: none;

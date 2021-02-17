@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  margin: 50px 0px;
 }
 
 .product-detail-image {
   margin: 20px;
-  width: 25%;
+  width: 30%;
   height: auto;
   border: 1px solid grey;
 }
@@ -48,7 +49,7 @@
   color: #F9F9F9;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:800px) {
   
   .product-detail {
     display: flex;
