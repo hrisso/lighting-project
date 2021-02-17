@@ -3,7 +3,9 @@ import Layout from "../../components/shared/Layout/Layout";
 import { SliderData } from "./SliderData";
 import { useState } from "react"; 
 import { FaArrowAltCircleRight,FaArrowAltCircleLeft } from "react-icons/fa" 
-import BestSellers from "../../components/BestSellers/BestSellers";
+import BestSellers from "../../components/BestSellers/BestSellers"; 
+import { Link } from "react-router-dom"; 
+
 
 const Home = ({slides, user}) => { 
   const [current, setCurrent] = useState(0); 
@@ -23,8 +25,8 @@ const Home = ({slides, user}) => {
   
   return (
     <div>
-      <Layout user={user}>
-        <div className="slider">
+      <Layout user={user}>  
+        <div className="slider"> 
           <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
           <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
           {SliderData.map((slide, index) => {
@@ -38,7 +40,13 @@ const Home = ({slides, user}) => {
                 )}
               </div>
             );
-          })}
+          })} 
+        </div>  
+        <div className="heathers-button">
+          <h3>Exquisite lamps for everyday</h3>
+        <Link to="/products">
+          <button className="rissos-button">View Products</button> 
+        </Link>
         </div>
         <h1 className="heading-1">Ways to Feature Lighting Solutions</h1>
         <div className="solutions-block">
