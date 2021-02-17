@@ -1,11 +1,12 @@
-.slider{ 
+.slider { 
   position:relative; 
   height: 80vh; 
   display: flex; 
   justify-content: center;
   align-items: center;
 } 
-.image{
+
+.image {
   width:70vw; 
   height:60vh; 
   border-radius:3px; 
@@ -13,7 +14,7 @@
   box-shadow:10px;
 } 
 
-.right-arrow{
+.right-arrow {
   position: absolute;  
   top:50%; 
   right:2%; 
@@ -22,9 +23,9 @@
   z-index:10; 
   cursor:pointer; 
   user-select:none; 
-
 } 
-.left-arrow{
+
+.left-arrow {
   position: absolute;  
   top:50%; 
   left: 2%; 
@@ -33,7 +34,6 @@
   z-index:10; 
   cursor:pointer; 
   user-select:none;
-
 } 
 
 .slide {
@@ -47,7 +47,7 @@
   transform: scale(1.08);
 } 
 
-.solutions-block{
+.solutions-block {
   display: flex;
   flex-direction: row; 
   justify-content: center; 
@@ -55,49 +55,29 @@
   font-family: 'Sora', sans-serif;
 } 
 
- .heading-1{
-   padding:20px;  
-   text-align: center; 
-   font-family: 'Sora', sans-serif; 
-   border-top:1px solid black;
- }
-.column{ 
-  margin:20px; 
+.heading-1 {
+  padding:20px;  
+  text-align: center; 
+  font-family: 'Sora', sans-serif; 
+  border-top:1px solid black;
+}
 
+.column { 
+  margin:20px; 
 }  
 
-.icon{
+.icon {
   width: 40px; 
   height: 40px; 
   margin: 8px; 
-} 
-.heading{
+}
+
+.heading {
   display: flex; 
   align-items: center;
 } 
 
-@media screen and (max-width: 500px){
-  .solutions-block{
-    display: flex;
-    flex-flow: row wrap; 
-    justify-content: center; 
-    align-items:flex-start;  
-    font-family: 'Sora', sans-serif;
-  }   
-  .image{
-    width:65vw; 
-    height:40vh; 
-    border-radius:3px; 
-    object-fit: cover;
-  } 
-
-  .slider{ 
-    position:relative; 
-    height: 50vh; 
-  }
-} 
-
-.rissos-button{
+.home-button {
   background-color:#FF6392;
   border-radius: 5px;
   border: none;
@@ -109,10 +89,32 @@
   width: 150px;
 } 
 
-.heathers-button{
+.home-button-section {
   display:flex;  
   flex-direction: column;
   justify-content: center; 
   align-items: center; 
   font-family: 'Sora', sans-serif;
 }
+
+@media screen and (max-width: 800px){
+  .solutions-block {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center; 
+    align-items:flex-start;  
+    font-family: 'Sora', sans-serif;
+  }
+
+  .image {
+    width:65vw; 
+    height:40vh; 
+    border-radius:3px; 
+    object-fit: cover;
+  } 
+
+  .slider { 
+    position:relative; 
+    height: 50vh; 
+  }
+} 
