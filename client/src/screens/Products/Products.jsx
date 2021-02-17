@@ -23,14 +23,15 @@ const Products = (props) => {
       imgURL={product.imgURL}
       price={product.price}
       key={index} />
-)
+  )
 
-return (
-  <Layout user={props.user}>
-    <div className="products">
-      {productsJSX}
-    </div>
-  </Layout>
-)
+  return (
+    <Layout user={props.user}>
+      <div className="products">
+        {productsJSX}
+      </div>
+    </Layout>
+  )
 }
+
 export default Products;
