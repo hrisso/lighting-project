@@ -1,5 +1,8 @@
 # lighting-project
 
+## Overview
+Linterna is a lamp appreciation web app that allows users to view high-end lamps all in one application. Users can view lamp details such as name, price, and description without an account. Upon sign up/sign in, users will be able to add, edit, and delete lamps from the collection.
+
 ## Schema
 
 ```
@@ -25,13 +28,13 @@ const User = new Schema(
 ```
 
 ## Whimsical Diagram
-![imageAlt](https://res.cloudinary.com/doas1ztbf/image/upload/v1612815239/Whimsical.png)
+![Whimsical](https://res.cloudinary.com/doas1ztbf/image/upload/v1612815239/Whimsical.png)
+
+## Wireframes
+![Wireframes](https://res.cloudinary.com/doas1ztbf/image/upload/v1613657620/p3-wireframe.png)
 
 ## Team Expectations
 https://docs.google.com/document/d/1YLXA-zjy0KFBMMgFSZN1QUKv3Rie46kFgE4ulY4VDks/edit?usp=sharing
-
-## Overview
-Linterna is a lamp appreciation web app that allows users to view high-end lamps all in one application. Users can view lamp details such as name, price, and description without an account. Upon sign up/sign in, users will be able to add, edit, and delete lamps from the collection.
 
 ## MVP
 - Homepage, Product List page, Product Detail Page, Add Product page, Edit Product page
